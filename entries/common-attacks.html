@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Common Attacks - Marcques Jesreel Leonor</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div class="logo">MJL</div>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#journal">Journal</a></li>
+                <li><a href="../index.html#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="entry-page">
+        <div class="entry-container">
+            <a href="../index.html#journal" class="back-button">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+                Back to Journal
+            </a>
+
+            <div class="entry-header">
+                <h1>Common Attacks</h1>
+                <p class="subtitle">Understanding how attacks occur to build better defenses.</p>
+                <span class="tag">Attacks</span>
+            </div>
+
+            <div class="entry-content">
+                <h2>What I Learned</h2>
+                <p>
+                    Learning about common attacks was eye-opening. I realized that most successful attacks aren't sophisticated—they exploit simple mistakes and common vulnerabilities. Understanding these attacks helps me think about security more practically.
+                </p>
+
+                <h3>Phishing</h3>
+                <p>
+                    Phishing is when attackers trick people into giving up sensitive information. They might send an email that looks like it's from your bank, asking you to click a link and enter your password. The link takes you to a fake website that steals your credentials.
+                </p>
+
+                <p>
+                    What I learned: <strong>People are often the weakest link in security.</strong> No matter how strong your technical defenses are, if someone can be tricked into handing over their password, the attacker gets in.
+                </p>
+
+                <h3>Brute Force Attacks</h3>
+                <p>
+                    A brute force attack is when an attacker tries many different passwords until they find the right one. It's like trying every key on a keyring until one opens the door.
+                </p>
+
+                <p>
+                    Modern tools can try thousands of passwords per second. That's why using strong, unique passwords is so important. A password like "password123" can be cracked in seconds. A long, random password might take years.
+                </p>
+
+                <h3>SQL Injection</h3>
+                <p>
+                    SQL injection happens when an attacker inserts malicious code into a web form or URL. If the website doesn't properly validate input, the attacker's code gets executed by the database.
+                </p>
+
+                <p>
+                    For example, instead of entering a username, an attacker might enter: <code>' OR '1'='1</code>. This can trick the database into returning all user records or even giving the attacker admin access.
+                </p>
+
+                <h3>Privilege Escalation</h3>
+                <p>
+                    Privilege escalation is when an attacker gains higher-level access than they should have. They might start as a regular user but find a way to become an administrator.
+                </p>
+
+                <p>
+                    This often happens through misconfigured permissions, unpatched software, or exploiting vulnerabilities in how the system handles user privileges.
+                </p>
+
+                <h3>How to Defend</h3>
+                <p>
+                    For each attack, I learned practical defenses:
+                </p>
+                <ul>
+                    <li><strong>Phishing:</strong> User education, email filtering, multi-factor authentication</li>
+                    <li><strong>Brute Force:</strong> Strong passwords, account lockouts, rate limiting</li>
+                    <li><strong>SQL Injection:</strong> Input validation, parameterized queries, least privilege</li>
+                    <li><strong>Privilege Escalation:</strong> Proper permissions, regular patching, monitoring</li>
+                </ul>
+
+                <blockquote>
+                    "Understanding how attacks work is the first step to preventing them. Every attack teaches you something about how to build better defenses."
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Marcques Jesreel Leonor.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

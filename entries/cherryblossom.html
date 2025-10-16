@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CherryBlossom - Marcques Jesreel Leonor</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div class="logo">MJL</div>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#journal">Journal</a></li>
+                <li><a href="../index.html#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="entry-page">
+        <div class="entry-container">
+            <a href="../index.html#journal" class="back-button">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+                Back to Journal
+            </a>
+
+            <div class="entry-header">
+                <h1>CherryBlossom</h1>
+                <p class="subtitle">Weak cryptography leads to full compromise.</p>
+                <span class="tag">Cryptography</span>
+            </div>
+
+            <div class="entry-content">
+                <h2>What I Learned</h2>
+                <p>
+                    CherryBlossom was my introduction to cryptography and password cracking. I learned that encryption is only as strong as its implementation—and weak crypto can be broken surprisingly easily.
+                </p>
+
+                <h3>Understanding Encryption</h3>
+                <p>
+                    Encryption is supposed to protect data by scrambling it so only authorized people can read it. But if the encryption is weak or poorly implemented, attackers can break it.
+                </p>
+                <p>
+                    I learned about different types of encryption:
+                </p>
+                <ul>
+                    <li><strong>Symmetric encryption:</strong> Same key for encryption and decryption (like AES)</li>
+                    <li><strong>Asymmetric encryption:</strong> Public and private key pairs (like RSA)</li>
+                    <li><strong>Hashing:</strong> One-way functions used for passwords (like SHA-256, bcrypt)</li>
+                </ul>
+
+                <h3>Password Cracking</h3>
+                <p>
+                    In this challenge, I used tools like <code>hashcat</code> and <code>john</code> to crack password hashes. I learned that:
+                </p>
+                <ul>
+                    <li>Weak passwords can be cracked in seconds</li>
+                    <li>Dictionary attacks use common passwords and words</li>
+                    <li>Brute force tries every possible combination</li>
+                    <li>Rainbow tables are pre-computed hash databases</li>
+                </ul>
+
+                <h3>Key Management</h3>
+                <p>
+                    One of the biggest lessons was about key management. Even strong encryption is useless if:
+                </p>
+                <ul>
+                    <li>Keys are stored insecurely</li>
+                    <li>Keys are too short or predictable</li>
+                    <li>Keys are reused across multiple systems</li>
+                    <li>Keys are never rotated or updated</li>
+                </ul>
+
+                <h3>Why This Matters</h3>
+                <p>
+                    Cryptography protects everything from passwords to financial transactions to private communications. Understanding how it works—and how it can fail—is essential for both attackers and defenders. Weak crypto is one of the most common vulnerabilities in real-world systems.
+                </p>
+
+                <blockquote>
+                    "Encryption is not magic. It's math. And if the math is weak or the implementation is flawed, the protection crumbles."
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Marcques Jesreel Leonor.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

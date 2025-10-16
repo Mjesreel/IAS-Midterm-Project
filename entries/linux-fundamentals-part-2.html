@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Fundamentals Part 2 - Marcques Jesreel Leonor</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div class="logo">MJL</div>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#journal">Journal</a></li>
+                <li><a href="../index.html#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="entry-page">
+        <div class="entry-container">
+            <a href="../index.html#journal" class="back-button">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+                Back to Journal
+            </a>
+
+            <div class="entry-header">
+                <h1>Linux Fundamentals Part 2</h1>
+                <p class="subtitle">Deeper into file systems, processes, and system administration.</p>
+                <span class="tag">Linux</span>
+            </div>
+
+            <div class="entry-content">
+                <h2>What I Learned</h2>
+                <p>
+                    Building on the basics, Part 2 took me deeper into how Linux actually works under the hood. I learned about file systems, how processes run, and the basics of system administration.
+                </p>
+
+                <h3>Understanding File Systems</h3>
+                <p>
+                    Linux treats everything as a file—even hardware devices. I learned about the directory structure and what each folder is for:
+                </p>
+                <ul>
+                    <li><code>/etc</code> - Configuration files</li>
+                    <li><code>/var</code> - Variable data like logs</li>
+                    <li><code>/home</code> - User home directories</li>
+                    <li><code>/tmp</code> - Temporary files</li>
+                    <li><code>/bin</code> and <code>/usr/bin</code> - Executable programs</li>
+                </ul>
+
+                <h3>Working with Processes</h3>
+                <p>
+                    I learned how to view and manage running processes using commands like <code>ps</code>, <code>top</code>, and <code>kill</code>. Understanding processes is crucial because malware often runs as a process, and knowing how to identify and stop suspicious processes is a key security skill.
+                </p>
+
+                <h3>System Administration Basics</h3>
+                <p>
+                    I got hands-on experience with:
+                </p>
+                <ul>
+                    <li>Managing users and groups</li>
+                    <li>Installing and updating software with package managers</li>
+                    <li>Checking system logs for errors or suspicious activity</li>
+                    <li>Understanding system services and how they start</li>
+                </ul>
+
+                <h3>Why This Matters</h3>
+                <p>
+                    Most servers run Linux. Whether you're attacking or defending, you need to understand how the system works. Knowing where logs are stored, how to check running processes, and how permissions work gives you the foundation to do real security work.
+                </p>
+
+                <blockquote>
+                    "Linux is the backbone of the internet. Understanding it deeply is not optional—it's essential."
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Marcques Jesreel Leonor.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

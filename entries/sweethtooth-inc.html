@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweethtooth Inc. - Marcques Jesreel Leonor</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div class="logo">MJL</div>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#journal">Journal</a></li>
+                <li><a href="../index.html#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="entry-page">
+        <div class="entry-container">
+            <a href="../index.html#journal" class="back-button">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+                Back to Journal
+            </a>
+
+            <div class="entry-header">
+                <h1>Sweethtooth Inc.</h1>
+                <p class="subtitle">Network segmentation and access control in enterprise environments.</p>
+                <span class="tag">Enterprise</span>
+            </div>
+
+            <div class="entry-content">
+                <h2>What I Learned</h2>
+                <p>
+                    Sweethtooth Inc. simulated a real enterprise network. I practiced enumeration and lateral movement—moving from one compromised system to another within a network. It taught me how enterprise security works and why proper segmentation matters.
+                </p>
+
+                <h3>Network Enumeration</h3>
+                <p>
+                    Enumeration is the process of gathering information about a network. I learned to:
+                </p>
+                <ul>
+                    <li>Scan for live hosts and open ports</li>
+                    <li>Identify running services and their versions</li>
+                    <li>Map out network topology</li>
+                    <li>Discover user accounts and groups</li>
+                    <li>Find shared resources like file servers</li>
+                </ul>
+
+                <h3>Lateral Movement</h3>
+                <p>
+                    Once I gained access to one system, I needed to move laterally to reach other systems. This involved:
+                </p>
+                <ul>
+                    <li>Using compromised credentials on other machines</li>
+                    <li>Exploiting trust relationships between systems</li>
+                    <li>Pivoting through compromised hosts to reach isolated networks</li>
+                    <li>Escalating privileges to gain administrative access</li>
+                </ul>
+
+                <h3>Network Segmentation</h3>
+                <p>
+                    I learned why network segmentation is so important. Segmentation means dividing a network into smaller, isolated sections. This limits how far an attacker can move if they compromise one system.
+                </p>
+                <p>
+                    For example:
+                </p>
+                <ul>
+                    <li>Separate networks for different departments</li>
+                    <li>Isolated networks for sensitive systems like databases</li>
+                    <li>DMZ (demilitarized zone) for public-facing servers</li>
+                    <li>Strict firewall rules between segments</li>
+                </ul>
+
+                <h3>Access Control</h3>
+                <p>
+                    Proper access control means ensuring users only have access to what they need. I learned about:
+                </p>
+                <ul>
+                    <li><strong>Principle of least privilege:</strong> Give minimum necessary permissions</li>
+                    <li><strong>Role-based access control:</strong> Permissions based on job roles</li>
+                    <li><strong>Multi-factor authentication:</strong> Requiring multiple forms of verification</li>
+                    <li><strong>Regular access reviews:</strong> Checking who has access to what</li>
+                </ul>
+
+                <h3>Why This Matters</h3>
+                <p>
+                    Enterprise networks are complex, with hundreds or thousands of systems. Without proper segmentation and access control, one compromised account can lead to a complete breach. This challenge showed me how real corporate security works and what defenders need to implement.
+                </p>
+
+                <blockquote>
+                    "In enterprise security, containment is everything. Segment your networks, control access, and limit the blast radius of any breach."
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Marcques Jesreel Leonor.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

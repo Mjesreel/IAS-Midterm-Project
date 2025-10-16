@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aster - Marcques Jesreel Leonor</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div class="logo">MJL</div>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#journal">Journal</a></li>
+                <li><a href="../index.html#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="entry-page">
+        <div class="entry-container">
+            <a href="../index.html#journal" class="back-button">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+                Back to Journal
+            </a>
+
+            <div class="entry-header">
+                <h1>Aster</h1>
+                <p class="subtitle">Securing data transmission through proper encryption practices.</p>
+                <span class="tag">Encryption</span>
+            </div>
+
+            <div class="entry-content">
+                <h2>What I Learned</h2>
+                <p>
+                    Aster focused on secure communications and how data travels across networks. I learned that even if data is encrypted, it can still be intercepted if the encryption isn't implemented correctly.
+                </p>
+
+                <h3>Data in Transit vs Data at Rest</h3>
+                <p>
+                    There are two main scenarios for protecting data:
+                </p>
+                <ul>
+                    <li><strong>Data at rest:</strong> Information stored on disks or databases</li>
+                    <li><strong>Data in transit:</strong> Information traveling across networks</li>
+                </ul>
+                <p>
+                    Aster taught me about protecting data in transit—making sure that when information travels from point A to point B, no one can read it along the way.
+                </p>
+
+                <h3>TLS/SSL and HTTPS</h3>
+                <p>
+                    I learned how HTTPS works and why it's important. When you visit a website with HTTPS, your connection is encrypted using TLS (Transport Layer Security). This prevents attackers from:
+                </p>
+                <ul>
+                    <li>Reading your passwords or credit card numbers</li>
+                    <li>Modifying the data being sent</li>
+                    <li>Impersonating the website you're visiting</li>
+                </ul>
+
+                <h3>Man-in-the-Middle Attacks</h3>
+                <p>
+                    One of the scariest things I learned about was man-in-the-middle (MITM) attacks. This is when an attacker positions themselves between you and the server you're communicating with. They can:
+                </p>
+                <ul>
+                    <li>Intercept and read all your messages</li>
+                    <li>Modify messages before they reach their destination</li>
+                    <li>Impersonate either side of the conversation</li>
+                </ul>
+                <p>
+                    Proper encryption prevents these attacks by ensuring that even if someone intercepts the data, they can't read or modify it.
+                </p>
+
+                <h3>Certificate Validation</h3>
+                <p>
+                    I also learned about digital certificates and why they matter. Certificates prove that a website is who it claims to be. If you ignore certificate warnings, you might be connecting to an attacker's server instead of the real one.
+                </p>
+
+                <h3>Why This Matters</h3>
+                <p>
+                    Almost everything we do online involves data transmission—logging in, shopping, messaging. If that data isn't properly encrypted, it's vulnerable. Understanding secure communication protocols is fundamental to protecting privacy and security.
+                </p>
+
+                <blockquote>
+                    "Data doesn't teleport—it travels. And every step of that journey needs to be protected."
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Marcques Jesreel Leonor.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

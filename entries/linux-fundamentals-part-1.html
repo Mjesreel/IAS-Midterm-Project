@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Fundamentals Part 1 - Marcques Jesreel Leonor</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div class="logo">MJL</div>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#journal">Journal</a></li>
+                <li><a href="../index.html#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="entry-page">
+        <div class="entry-container">
+            <a href="../index.html#journal" class="back-button">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+                Back to Journal
+            </a>
+
+            <div class="entry-header">
+                <h1>Linux Fundamentals Part 1</h1>
+                <p class="subtitle">Navigating the command line—the foundation of both attack and defense.</p>
+                <span class="tag">Linux</span>
+            </div>
+
+            <div class="entry-content">
+                <h2>What I Learned</h2>
+                <p>
+                    Linux is everywhere in cybersecurity. Most servers run Linux, many security tools are built for Linux, and understanding Linux is essential for both attackers and defenders. This was my introduction to working with Linux through the command line interface (CLI).
+                </p>
+
+                <h3>The Command Line</h3>
+                <p>
+                    At first, the command line felt intimidating. No buttons to click, no visual interface—just a black screen and a blinking cursor. But once I got comfortable, I realized how powerful it is.
+                </p>
+
+                <p>
+                    I learned basic commands like:
+                </p>
+                <ul>
+                    <li><code>ls</code> - list files and directories</li>
+                    <li><code>cd</code> - change directory</li>
+                    <li><code>pwd</code> - print working directory (where am I?)</li>
+                    <li><code>cat</code> - view file contents</li>
+                    <li><code>grep</code> - search for text in files</li>
+                    <li><code>chmod</code> - change file permissions</li>
+                </ul>
+
+                <h3>Permissions and Users</h3>
+                <p>
+                    One of the most important concepts I learned was the Linux permission system. Every file and directory has permissions that control who can read, write, or execute it.
+                </p>
+
+                <p>
+                    Permissions are divided into three groups:
+                </p>
+                <ul>
+                    <li><strong>Owner:</strong> The user who owns the file</li>
+                    <li><strong>Group:</strong> A group of users</li>
+                    <li><strong>Others:</strong> Everyone else</li>
+                </ul>
+
+                <p>
+                    Understanding permissions is crucial because many security vulnerabilities come from misconfigured permissions. If a sensitive file is readable by everyone, that's a problem.
+                </p>
+
+                <h3>Services and Processes</h3>
+                <p>
+                    I also learned about services (programs that run in the background) and how to manage them. Commands like <code>systemctl</code> let you start, stop, and check the status of services.
+                </p>
+
+                <p>
+                    This is important because attackers often target running services to find vulnerabilities. As a defender, you need to know what services are running and make sure they're properly secured.
+                </p>
+
+                <h3>Why This Matters</h3>
+                <p>
+                    Linux fundamentals are the foundation of cybersecurity work. Whether you're analyzing logs, running security tools, or exploiting vulnerabilities, you'll be doing it on Linux. Getting comfortable with the command line opens up a whole world of possibilities.
+                </p>
+
+                <blockquote>
+                    "The command line is not just a tool—it's a way of thinking. It teaches you to be precise, efficient, and to understand what's really happening under the hood."
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Marcques Jesreel Leonor.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

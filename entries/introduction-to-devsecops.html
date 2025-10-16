@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to DevSecOps - Marcques Jesreel Leonor</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div class="logo">MJL</div>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#journal">Journal</a></li>
+                <li><a href="../index.html#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="entry-page">
+        <div class="entry-container">
+            <a href="../index.html#journal" class="back-button">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+                Back to Journal
+            </a>
+
+            <div class="entry-header">
+                <h1>Introduction to DevSecOps</h1>
+                <p class="subtitle">Shifting security left—embedding protection into the development lifecycle.</p>
+                <span class="tag">DevSecOps</span>
+            </div>
+
+            <div class="entry-content">
+                <h2>What I Learned</h2>
+                <p>
+                    DevSecOps is about integrating security into every stage of software development. Instead of treating security as something you add at the end, you build it in from the start.
+                </p>
+
+                <h3>Shifting Left</h3>
+                <p>
+                    "Shifting left" means moving security earlier in the development process. Traditionally, security testing happened at the end, right before release. But by then, fixing vulnerabilities is expensive and time-consuming.
+                </p>
+                <p>
+                    With DevSecOps, you catch security issues early—during coding, during testing, and during deployment. This saves time, money, and prevents vulnerabilities from reaching production.
+                </p>
+
+                <h3>Automation is Key</h3>
+                <p>
+                    DevSecOps relies heavily on automation. Instead of manually checking code for vulnerabilities, you use automated tools that scan every code commit:
+                </p>
+                <ul>
+                    <li><strong>Static Application Security Testing (SAST):</strong> Scans source code for vulnerabilities</li>
+                    <li><strong>Dynamic Application Security Testing (DAST):</strong> Tests running applications for security flaws</li>
+                    <li><strong>Dependency scanning:</strong> Checks for vulnerable libraries and packages</li>
+                    <li><strong>Container scanning:</strong> Ensures Docker images don't have known vulnerabilities</li>
+                </ul>
+
+                <h3>Secure Coding Practices</h3>
+                <p>
+                    I learned that developers need to think about security while writing code. This includes:
+                </p>
+                <ul>
+                    <li>Input validation to prevent injection attacks</li>
+                    <li>Proper authentication and authorization</li>
+                    <li>Secure handling of sensitive data</li>
+                    <li>Using security libraries and frameworks correctly</li>
+                </ul>
+
+                <h3>Why This Matters</h3>
+                <p>
+                    Most modern applications are built using DevOps practices—continuous integration and continuous deployment. If security isn't part of that process, vulnerabilities slip through. DevSecOps ensures that speed doesn't come at the cost of security.
+                </p>
+
+                <blockquote>
+                    "Security isn't a phase—it's a practice. When you embed it into development, you build safer software from the ground up."
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Marcques Jesreel Leonor.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

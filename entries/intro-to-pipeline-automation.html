@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to Pipeline Automation - Marcques Jesreel Leonor</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div class="logo">MJL</div>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#journal">Journal</a></li>
+                <li><a href="../index.html#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="entry-page">
+        <div class="entry-container">
+            <a href="../index.html#journal" class="back-button">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+                Back to Journal
+            </a>
+
+            <div class="entry-header">
+                <h1>Intro to Pipeline Automation</h1>
+                <p class="subtitle">CI/CD pipelines can both enhance and endanger security.</p>
+                <span class="tag">Automation</span>
+            </div>
+
+            <div class="entry-content">
+                <h2>What I Learned</h2>
+                <p>
+                    CI/CD stands for Continuous Integration and Continuous Deployment. It's a way of automating the process of building, testing, and deploying software. But while automation speeds things up, it can also introduce security risks if not done carefully.
+                </p>
+
+                <h3>How Pipelines Work</h3>
+                <p>
+                    A typical CI/CD pipeline looks like this:
+                </p>
+                <ol>
+                    <li>Developer commits code to a repository (like GitHub)</li>
+                    <li>Automated tests run to check if the code works</li>
+                    <li>Security scans check for vulnerabilities</li>
+                    <li>If everything passes, the code is automatically deployed to production</li>
+                </ol>
+
+                <h3>Security Risks in Pipelines</h3>
+                <p>
+                    Pipelines can be dangerous if not secured properly:
+                </p>
+                <ul>
+                    <li><strong>Exposed secrets:</strong> API keys or passwords hardcoded in scripts</li>
+                    <li><strong>Compromised dependencies:</strong> Malicious packages that get pulled in during builds</li>
+                    <li><strong>Insufficient testing:</strong> Vulnerabilities that slip through because security scans aren't thorough</li>
+                    <li><strong>Privilege escalation:</strong> Pipeline scripts running with too many permissions</li>
+                </ul>
+
+                <h3>Securing the Pipeline</h3>
+                <p>
+                    I learned several ways to make pipelines more secure:
+                </p>
+                <ul>
+                    <li>Use secret management tools instead of hardcoding credentials</li>
+                    <li>Scan dependencies for known vulnerabilities</li>
+                    <li>Implement code signing to verify artifact integrity</li>
+                    <li>Use least privilege principles for pipeline permissions</li>
+                    <li>Monitor pipeline logs for suspicious activity</li>
+                </ul>
+
+                <h3>Why This Matters</h3>
+                <p>
+                    Pipelines are powerful but also a prime target for attackers. If an attacker compromises your pipeline, they can inject malicious code directly into production. Understanding how pipelines work and how to secure them is critical in modern software development.
+                </p>
+
+                <blockquote>
+                    "Automation is a double-edged sword. It speeds up deployment, but if compromised, it speeds up attacks too."
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Marcques Jesreel Leonor.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

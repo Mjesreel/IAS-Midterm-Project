@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0day - Marcques Jesreel Leonor</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div class="logo">MJL</div>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#journal">Journal</a></li>
+                <li><a href="../index.html#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="entry-page">
+        <div class="entry-container">
+            <a href="../index.html#journal" class="back-button">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+                Back to Journal
+            </a>
+
+            <div class="entry-header">
+                <h1>0day</h1>
+                <p class="subtitle">The lifecycle of zero-day vulnerabilities and exploit chains.</p>
+                <span class="tag">Exploits</span>
+            </div>
+
+            <div class="entry-content">
+                <h2>What I Learned</h2>
+                <p>
+                    A "zero-day" vulnerability is a security flaw that's unknown to the software vendor. It's called zero-day because there have been zero days to fix it. This challenge taught me about how these vulnerabilities are discovered, exploited, and eventually patched.
+                </p>
+
+                <h3>The Zero-Day Lifecycle</h3>
+                <p>
+                    Zero-day vulnerabilities go through several stages:
+                </p>
+                <ol>
+                    <li><strong>Discovery:</strong> Someone finds a vulnerability (researcher, attacker, or by accident)</li>
+                    <li><strong>Exploitation:</strong> An exploit is developed to take advantage of the flaw</li>
+                    <li><strong>Disclosure:</strong> The vulnerability is reported (or kept secret)</li>
+                    <li><strong>Patching:</strong> The vendor creates and releases a fix</li>
+                    <li><strong>Deployment:</strong> Users install the patch</li>
+                </ol>
+
+                <h3>Exploit Chains</h3>
+                <p>
+                    I learned that sophisticated attacks often use exploit chains—combining multiple vulnerabilities to achieve a goal. For example:
+                </p>
+                <ul>
+                    <li>First exploit: Gain initial access (like through a web vulnerability)</li>
+                    <li>Second exploit: Escalate privileges to admin level</li>
+                    <li>Third exploit: Bypass security controls</li>
+                    <li>Fourth exploit: Maintain persistent access</li>
+                </ul>
+
+                <h3>Responsible Disclosure</h3>
+                <p>
+                    There's an ethical debate around zero-days. When you find a vulnerability, you can:
+                </p>
+                <ul>
+                    <li><strong>Responsible disclosure:</strong> Report it to the vendor privately, give them time to fix it</li>
+                    <li><strong>Full disclosure:</strong> Publish it immediately to force quick action</li>
+                    <li><strong>Keep it secret:</strong> Use it for attacks or sell it (illegal and unethical)</li>
+                </ul>
+                <p>
+                    I learned that responsible disclosure is the ethical approach—it protects users while giving vendors time to fix the problem.
+                </p>
+
+                <h3>Exploit Mitigation</h3>
+                <p>
+                    Even without knowing specific vulnerabilities, you can implement protections:
+                </p>
+                <ul>
+                    <li><strong>Defense in depth:</strong> Multiple layers of security</li>
+                    <li><strong>Exploit mitigations:</strong> Features like ASLR, DEP, and sandboxing</li>
+                    <li><strong>Behavioral detection:</strong> Monitoring for suspicious activity</li>
+                    <li><strong>Rapid patching:</strong> Applying updates quickly when they're released</li>
+                </ul>
+
+                <h3>Why This Matters</h3>
+                <p>
+                    Zero-days are the most dangerous vulnerabilities because there's no patch available. Understanding how they work and how to mitigate them is crucial for defenders. This challenge showed me that security is a constant race between attackers finding new flaws and defenders patching them.
+                </p>
+
+                <blockquote>
+                    "Zero-days remind us that perfect security doesn't exist. The best we can do is minimize exposure and respond quickly when vulnerabilities are discovered."
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Marcques Jesreel Leonor.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

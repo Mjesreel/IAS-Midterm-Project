@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Server From Hell - Marcques Jesreel Leonor</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div class="logo">MJL</div>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#journal">Journal</a></li>
+                <li><a href="../index.html#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="entry-page">
+        <div class="entry-container">
+            <a href="../index.html#journal" class="back-button">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+                Back to Journal
+            </a>
+
+            <div class="entry-header">
+                <h1>The Server From Hell</h1>
+                <p class="subtitle">Chaos teaches the value of documentation and configuration management.</p>
+                <span class="tag">Configuration</span>
+            </div>
+
+            <div class="entry-content">
+                <h2>What I Learned</h2>
+                <p>
+                    This challenge lived up to its name. I encountered a server that was completely misconfigured, poorly documented, and full of security holes. It was frustrating, but it taught me valuable lessons about proper system management.
+                </p>
+
+                <h3>The Dangers of Misconfiguration</h3>
+                <p>
+                    Misconfiguration is one of the most common security vulnerabilities. In this challenge, I found:
+                </p>
+                <ul>
+                    <li>Services running with default passwords</li>
+                    <li>Unnecessary ports left open</li>
+                    <li>Outdated software with known vulnerabilities</li>
+                    <li>Improper file permissions allowing unauthorized access</li>
+                    <li>No firewall rules in place</li>
+                </ul>
+
+                <h3>The Importance of Documentation</h3>
+                <p>
+                    One of the biggest problems was the lack of documentation. I had no idea:
+                </p>
+                <ul>
+                    <li>What services were supposed to be running</li>
+                    <li>Who had access to what</li>
+                    <li>What changes had been made and why</li>
+                    <li>How to properly configure the system</li>
+                </ul>
+                <p>
+                    This taught me that good documentation isn't optional—it's essential. When something goes wrong, you need to know how the system is supposed to work.
+                </p>
+
+                <h3>Configuration Management</h3>
+                <p>
+                    I learned about configuration management tools that help keep systems consistent and secure:
+                </p>
+                <ul>
+                    <li><strong>Infrastructure as Code:</strong> Defining server configurations in code</li>
+                    <li><strong>Version control:</strong> Tracking changes to configurations</li>
+                    <li><strong>Automated deployment:</strong> Ensuring consistent setup across servers</li>
+                    <li><strong>Configuration auditing:</strong> Regularly checking for drift from secure baselines</li>
+                </ul>
+
+                <h3>Secure Deployment Practices</h3>
+                <p>
+                    I learned that secure deployment means:
+                </p>
+                <ul>
+                    <li>Starting with a minimal, hardened base configuration</li>
+                    <li>Only installing what's actually needed</li>
+                    <li>Changing all default credentials immediately</li>
+                    <li>Documenting every change</li>
+                    <li>Regularly reviewing and updating configurations</li>
+                </ul>
+
+                <h3>Why This Matters</h3>
+                <p>
+                    Most breaches don't happen because of sophisticated attacks—they happen because of simple misconfigurations. A server that's poorly set up is an easy target. This challenge showed me that proper configuration and documentation are just as important as any security tool.
+                </p>
+
+                <blockquote>
+                    "Chaos is the enemy of security. Order, documentation, and proper configuration are your first line of defense."
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Marcques Jesreel Leonor.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
